@@ -52,7 +52,7 @@ def main() -> None:
         "tulu3_8b_sft", "claude_sonnet_5", "gpt_5_6_sol",
         "olmo3_7b_sft_gepa", "olmo3_7b_sft_lora")}
 
-    print("\nSection 4.1 / Figure 2: prevalence of Deep and Shallow bias")
+    print("\nPrevalence of Deep and Shallow bias")
     paper = {"olmo3_7b_sft": (10.8, 25.0), "tulu3_8b_sft": (14.7, 28.6),
              "claude_sonnet_5": (9.9, 67.8), "gpt_5_6_sol": (17.4, 37.1)}
     deeps, shals = [], []
@@ -64,13 +64,13 @@ def main() -> None:
     check("mean Deep % over the four models", float(np.mean(deeps)), 13.2)
     check("mean Shallow % over the four models", float(np.mean(shals)), 39.6)
 
-    print("\nSection 4.2 / Figure 3: bias across the Olmo-3-7B training stages")
+    print("\nBias across the Olmo-3-7B training stages")
     for m, (pd, ps) in {"olmo3_7b_pretrained": (9.8, 8.0), "olmo3_7b_sft": (10.8, 25.0),
                         "olmo3_7b_dpo": (10.0, 36.2), "olmo3_7b_rlvr": (12.6, 38.9)}.items():
         check(f"{m} Deep %", pct(out[m], "deep"), pd)
         check(f"{m} Shallow %", pct(out[m], "shallow"), ps)
 
-    print("\nSection 4.3 / Figure 4: deeper SFT biases more often match the pretrained answer")
+    print("\nDeeper SFT biases more often match the pretrained answer")
     pre = {r["id"]: r["direct"]["top_answer"] for r in out["olmo3_7b_pretrained"]}
     pis, shared = [], []
     for r in out["olmo3_7b_sft"]:
@@ -90,7 +90,7 @@ def main() -> None:
     check("same-top-answer %, highest bin [0.8, 1]", 100 * shared[hi].mean(), 62.3)
     check("Pearson r(pi, same top answer)", float(np.corrcoef(pis, shared)[0, 1]), 0.27, tol=0.005)
 
-    print("\nSection 4.4 / Table 2: debiasing (independent classification)")
+    print("\nDebiasing (independent classification)")
     for m, trip in {"olmo3_7b_sft": (10.8, 25.0, 64.2), "olmo3_7b_sft_gepa": (9.2, 19.2, 71.6),
                     "olmo3_7b_sft_lora": (6.3, 14.7, 79.0)}.items():
         for kind, p in zip(("deep", "shallow", "non_bias"), trip):

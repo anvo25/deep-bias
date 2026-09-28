@@ -2,7 +2,7 @@
 
 The adapter repo holds only the LoRA weights (no config.json), so it is
 merged into its base model once and saved as a normal checkpoint. This is
-the checkpoint evaluated as olmo3_7b_sft_lora in the paper (Section 4.4).
+the checkpoint evaluated as olmo3_7b_sft_lora in the paper.
 
 Usage:
     python debiasing/lora/merge_adapter.py --adapter <adapter-repo> --out work/models/olmo3_7b_sft_lora

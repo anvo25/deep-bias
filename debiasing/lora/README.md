@@ -1,4 +1,4 @@
-# Continued LoRA-SFT for diversity (Section 4.4)
+# Continued LoRA-SFT for diversity
 
 We continue training Olmo-3-7B-SFT with a LoRA adapter on the 60 biased prompt families in [`../gepa/anchors/`](../gepa/anchors/) (30 Deep, 30 Shallow). Each prompt is paired with 30 different valid answers, 1,800 training pairs in total, so the adapter learns to spread its answers instead of repeating one.
 

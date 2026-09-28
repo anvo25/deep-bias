@@ -1,4 +1,4 @@
-"""Bias depth metrics (paper Section 2).
+"""Bias depth metrics.
 
 For one prompt family and one model:
   DR  direct rate: share of the 30 direct samples that give the top answer

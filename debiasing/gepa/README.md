@@ -1,4 +1,4 @@
-# GEPA system prompt (Section 4.4)
+# GEPA system prompt
 
 We use [GEPA](https://github.com/gepa-ai/gepa) (through [DSPy](https://dspy.ai)) to search for a system prompt that makes Olmo-3-7B-SFT spread its answers over the valid options instead of repeating one favorite.
 

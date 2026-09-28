@@ -1,4 +1,4 @@
-"""Optimize a debiasing system prompt for Olmo-3-7B-SFT with GEPA (Section 4.4).
+"""Optimize a debiasing system prompt for Olmo-3-7B-SFT with GEPA.
 
 GEPA (via DSPy) mutates a seed instruction to make the student's answers on
 open-ended "Choose a random ..." prompts as spread out as possible. It
