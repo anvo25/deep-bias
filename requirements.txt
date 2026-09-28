@@ -1,0 +1,25 @@
+# analysis and data loading (CPU)
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+datasets>=2.21
+huggingface_hub>=0.24
+lemminflect>=0.2.3
+tqdm>=4.66
+
+# evaluation: sampling and the cluster judge
+openai>=1.40
+httpx>=0.27
+requests>=2.31
+sentence-transformers>=3.0
+torch>=2.3
+
+# dataset construction (step 2 TF-IDF ranking)
+scikit-learn>=1.4
+
+# LoRA merge
+transformers>=4.57
+peft>=0.13
+
+# Serving open models needs vLLM (GPU): pip install vllm
+# Rerunning GEPA needs DSPy:           pip install dspy==3.2.1

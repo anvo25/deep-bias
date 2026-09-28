@@ -1,0 +1,8 @@
+OK: top-1 answer is "{top1_answer}", taking only {top1_share_pct}% of the {K} samples.  This is below the OK floor of {ok_threshold_pct}% (well under the paper bias cutoff of {bias_threshold_pct}%).  The original favourite for this prompt was "{bias_mode}", and {n_residual}/{K} samples still match it.
+
+Distribution of the {K} samples on this prompt:
+{dist}
+
+The instruction is producing varied responses across independent calls; no single answer dominates.  Keep this general formulation.
+
+REMINDER: keep the rule GENERAL.  The strings shown in this feedback (the top-1 answer "{top1_answer}", the original favourite "{bias_mode}", and the items in the distribution above) are DIAGNOSTIC information for you only.  Do NOT copy any of them into future revisions of the instruction, neither as forbidden words nor as suggested answers nor as worked examples.  The current general formulation must continue to work on held-out prompts in any topic.

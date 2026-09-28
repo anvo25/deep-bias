@@ -1,0 +1,10 @@
+PARTIAL: top-1 answer is "{top1_answer}", taking {top1_share_pct}% of the {K} samples.  This is at or below the paper bias cutoff of {bias_threshold_pct}% but above the OK floor of {ok_threshold_pct}%.  The original favourite for this prompt was "{bias_mode}", and {n_residual}/{K} samples still match it.
+
+Distribution of the {K} samples on this prompt:
+{dist}
+
+The instruction loosened the concentration but a single answer still takes a large share of the calls.  Note: a single dominant answer is a failure whether it is the original favourite or a different substitute; the goal is mass spread across many plausible answers.
+
+Target: bring the percentage of top-1 answer below {ok_threshold_pct}%.
+
+REMINDER: write a GENERAL rule.  The strings shown in this feedback (the top-1 answer "{top1_answer}", the original favourite "{bias_mode}", and every item in the distribution above) are DIAGNOSTIC information for you only.  Do NOT copy any of them into the instruction you produce, neither as forbidden words nor as suggested answers nor as worked examples.  Do NOT hard-code specific answers, name particular prompts, or mention this domain.  Anchor-specific tricks will fail on held-out prompts; state the principle, not the answer.
