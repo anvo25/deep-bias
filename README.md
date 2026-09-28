@@ -15,7 +15,7 @@
     <sup>1</sup>MBZUAI, <sup>2</sup>University of Michigan, <sup>3</sup>KAIST, <sup>4</sup>University of Virginia, <sup>5</sup>Auburn University
   </p>
 
-  <h3>The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)</h3>
+  <h3>The 2026 Conference on Empirical Methods in Natural Language Processing<br>(EMNLP 2026)</h3>
 
 [![Project Page](https://img.shields.io/badge/Project_Page-deepbias.github.io-blue.svg)](https://deepbias.github.io/)
 [![arXiv](https://img.shields.io/badge/arXiv-2609.09901-b31b1b.svg)](https://arxiv.org/abs/2609.09901)
