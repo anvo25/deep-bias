@@ -38,14 +38,14 @@ SECRET = re.compile(
 # release config name -> (internal output dir, checkpoint or API model, note)
 MODELS = {
     "olmo3_7b_pretrained": ("olmo3_pretrained", "allenai/Olmo-3-1025-7B", "queried with a Q:/A: completion prompt"),
-    "olmo3_7b_sft":        ("olmo3_sft", "tuongvy2603/BITD_baseline", "our re-SFT of Olmo-3-1025-7B on Dolci-Instruct-SFT only"),
+    "olmo3_7b_sft":        ("olmo3_sft", "tuongvy2603/Olmo3_baseline", "our re-SFT of Olmo-3-1025-7B on Dolci-Instruct-SFT only"),
     "olmo3_7b_dpo":        ("olmo3_dpo", "allenai/Olmo-3-7B-Instruct-DPO", "official checkpoint"),
     "olmo3_7b_rlvr":       ("olmo3_rlvr", "allenai/Olmo-3-7B-Instruct", "official checkpoint"),
     "tulu3_8b_sft":        ("tulu3_sft", "allenai/Llama-3.1-Tulu-3-8B-SFT", "official checkpoint"),
     "claude_sonnet_5":     ("claude_sonnet_5", "anthropic/claude-sonnet-5", "via OpenRouter, reasoning disabled"),
     "gpt_5_6_sol":         ("gpt56sol", "gpt-5.6-sol", "via the OpenAI API, reasoning disabled"),
-    "olmo3_7b_sft_gepa":   ("bitd_gepa", "tuongvy2603/BITD_baseline", "with the GEPA-optimized system prompt"),
-    "olmo3_7b_sft_lora":   ("olmo3_sft_lora_data_new", "tuongvy2603/BITD_baseline + diversity LoRA adapter", "continued LoRA-SFT adapter merged"),
+    "olmo3_7b_sft_gepa":   ("bitd_gepa", "tuongvy2603/Olmo3_baseline", "with the GEPA-optimized system prompt"),
+    "olmo3_7b_sft_lora":   ("olmo3_sft_lora_data_new", "tuongvy2603/Olmo3_baseline + diversity LoRA adapter", "continued LoRA-SFT adapter merged"),
 }
 
 

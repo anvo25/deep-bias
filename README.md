@@ -100,14 +100,14 @@ bash evaluation/run_model.sh my_model.env
 
 Results are written to `work/outputs/<config>.jsonl` in the same format as the released data. Answers are sampled at temperature 0.6, so a rerun gives slightly different counts than the released outputs.
 
-Our Olmo-3-7B-SFT model (Olmo-3-1025-7B trained on Dolci-Instruct-SFT only) is [`tuongvy2603/BITD_baseline`](https://huggingface.co/tuongvy2603/BITD_baseline).
+Our Olmo-3-7B-SFT model (Olmo-3-1025-7B trained on Dolci-Instruct-SFT only) is [`tuongvy2603/Olmo3_baseline`](https://huggingface.co/tuongvy2603/Olmo3_baseline). To rebuild it from scratch, see [`debiasing/olmo3_baseline/`](debiasing/olmo3_baseline/).
 
 ---
 
 ## 4. Debiasing
 
 - **GEPA system prompt:** [`debiasing/gepa/optimized_system_prompt.txt`](debiasing/gepa/optimized_system_prompt.txt). Evaluate it with `bash evaluation/run_model.sh olmo3_7b_sft_gepa`, or rerun the optimization with [`debiasing/gepa/`](debiasing/gepa/).
-- **Continued LoRA-SFT:** the adapter, training code and data are coming soon in [`debiasing/lora/`](debiasing/lora/).
+- **Continued LoRA-SFT:** training code and data are in [`debiasing/lora/`](debiasing/lora/); the trained adapter is coming soon.
 
 ---
 
@@ -135,7 +135,7 @@ deepbias/      shared code: answer matching, metrics, data loading, API client
 dataset/       build the prompt families and reframings
 evaluation/    sample, cluster and score a model
 analysis/      reproduce the paper's numbers and figures
-debiasing/     GEPA system prompt and continued LoRA-SFT
+debiasing/     Olmo-3-7B-SFT baseline training, GEPA system prompt and continued LoRA-SFT
 figures/       generated figures
 scripts/       script that exported the released data
 ```

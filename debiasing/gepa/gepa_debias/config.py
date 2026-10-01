@@ -19,7 +19,7 @@ class GEPARunConfig:
     data_dir: Optional[str] = None
 
     # Student: the SFT model behind an OpenAI-compatible (vLLM) server.
-    student_model: str = "tuongvy2603/BITD_baseline"
+    student_model: str = "tuongvy2603/Olmo3_baseline"
     student_base_url: str = "http://localhost:8000/v1"
 
     # Sampling inside the metric.

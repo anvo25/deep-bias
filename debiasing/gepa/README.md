@@ -9,7 +9,7 @@ We use [GEPA](https://github.com/gepa-ai/gepa) (through [DSPy](https://dspy.ai))
 
 ```bash
 pip install dspy==3.2.1
-vllm serve tuongvy2603/BITD_baseline --port 8000 \
+vllm serve tuongvy2603/Olmo3_baseline --port 8000 \
     --max-model-len 4096 --max-num-seqs 512 --enable-prefix-caching
 export OPENAI_API_KEY=...
 python debiasing/gepa/run_gepa.py --out-dir work/gepa

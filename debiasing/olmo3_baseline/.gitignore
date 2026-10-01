@@ -1,0 +1,7 @@
+env.sh
+olmo3_sft/miniforge/
+olmo3_sft/miniforge.sh
+olmo3_sft/artifacts/
+olmo3_sft/cache/
+olmo3_sft/outputs/
+olmo3_sft/repro/
