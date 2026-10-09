@@ -2,7 +2,7 @@
 
 This folder rebuilds the Olmo-3-7B-SFT model used in the paper: [`allenai/Olmo-3-1025-7B`](https://huggingface.co/allenai/Olmo-3-1025-7B) fine-tuned on [`allenai/Dolci-Instruct-SFT`](https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT) with Ai2's SFT recipe.
 
-You do not need it to use the model. The trained model is released as [`tuongvy2603/Olmo3_baseline`](https://huggingface.co/tuongvy2603/Olmo3_baseline), and that is the checkpoint behind the paper's numbers. A rebuild gives a close but not identical model.
+You do not need it to use the model. The trained model is released as [`tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate`](https://huggingface.co/tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate), and that is the checkpoint behind the paper's numbers. A rebuild gives a close but not identical model.
 
 ## Requirements
 

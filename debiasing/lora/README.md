@@ -47,7 +47,8 @@ Pass `--wandb_mode disabled` to step 3 to skip Weights & Biases logging.
 
 | Setting | Value |
 |---|---|
-| Base model | Olmo-3-7B-SFT (`tuongvy2603/Olmo3_baseline`) |
+| Base model | Olmo-3-7B-SFT (`tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate`) |
+| Released adapter | [`tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate-debias-lora`](https://huggingface.co/tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate-debias-lora) |
 | LoRA rank / alpha / dropout | 16 / 32 / 0.05 |
 | Target modules | `q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj` |
 | Loss | Completion only (prompt tokens masked) |

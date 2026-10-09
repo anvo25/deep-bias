@@ -100,7 +100,7 @@ bash evaluation/run_model.sh my_model.env
 
 Results are written to `work/outputs/<config>.jsonl` in the same format as the released data. Answers are sampled at temperature 0.6, so a rerun gives slightly different counts than the released outputs.
 
-Our Olmo-3-7B-SFT model (Olmo-3-1025-7B trained on Dolci-Instruct-SFT only) is [`tuongvy2603/Olmo3_baseline`](https://huggingface.co/tuongvy2603/Olmo3_baseline). To rebuild it from scratch, see [`debiasing/olmo3_baseline/`](debiasing/olmo3_baseline/).
+Our Olmo-3-7B-SFT model (Olmo-3-1025-7B trained on Dolci-Instruct-SFT only) is [`tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate`](https://huggingface.co/tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate). To rebuild it from scratch, see [`debiasing/olmo3_baseline/`](debiasing/olmo3_baseline/).
 
 ---
 

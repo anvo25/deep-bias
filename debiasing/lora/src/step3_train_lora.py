@@ -1,6 +1,6 @@
 """Continued LoRA-SFT of the Olmo3 baseline on the Deep + Shallow diversity data.
 
-Starts from `tuongvy2603/Olmo3_baseline` and trains one LoRA adapter on
+Starts from `tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate` and trains one LoRA adapter on
 data/train_messages.jsonl (built by step2_convert_to_messages.py).
 
 Dataset format (Dolci-Instruct-SFT style):
@@ -50,7 +50,7 @@ def load_messages_jsonl(path: str) -> Dataset:
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser()
-    p.add_argument("--model_id", default="tuongvy2603/Olmo3_baseline")
+    p.add_argument("--model_id", default="tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate")
     p.add_argument("--data_path", default=str(DEFAULT_DATA_PATH))
     p.add_argument("--output_dir", default="work/lora/olmo3_7b_sft_lora_adapter")
     p.add_argument("--num_train_epochs", type=float, default=5.0)

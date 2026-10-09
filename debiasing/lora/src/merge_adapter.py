@@ -15,7 +15,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-BASE_MODEL = "tuongvy2603/Olmo3_baseline"
+BASE_MODEL = "tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate"
 ADAPTER = None  # the adapter will be released soon, see debiasing/lora/README.md
 
 

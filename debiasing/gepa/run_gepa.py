@@ -10,7 +10,7 @@ scored.
 
 Requirements:
   * the student served behind an OpenAI-compatible endpoint, e.g.
-      vllm serve tuongvy2603/Olmo3_baseline --port 8000
+      vllm serve tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate --port 8000
   * an API key for the reflection LM in the environment (OPENAI_API_KEY
     for the default openai/gpt-5.6-sol)
 
