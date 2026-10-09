@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SFT Olmo-3-1025-7B on Dolci-Instruct-SFT (Ai2 tokenization) -> the Olmo3 baseline.
+# SFT Olmo-3-1025-7B on Dolci-Instruct-SFT (Ai2 tokenization) -> our replicated Olmo-3-7B-SFT.
 # Run `bash setup.sh` first, then: bash olmo3_sft/run_sft.sh
 #
 # Optional environment variables:

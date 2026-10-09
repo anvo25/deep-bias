@@ -1,4 +1,4 @@
-# Olmo-3-7B-SFT baseline
+# Olmo-3-7B-SFT replication
 
 This folder rebuilds the Olmo-3-7B-SFT model used in the paper: [`allenai/Olmo-3-1025-7B`](https://huggingface.co/allenai/Olmo-3-1025-7B) fine-tuned on [`allenai/Dolci-Instruct-SFT`](https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT) with Ai2's SFT recipe.
 

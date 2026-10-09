@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Convert the latest OLMo-core checkpoint of each run to a HuggingFace model
-# (written next to it as step<N>-hf). By default converts the baseline run.
+# (written next to it as step<N>-hf). By default converts the replication run.
 # Usage: bash olmo3_sft/convert_listed_checkpoints_to_hf.sh [run_dir ...]
 set -euo pipefail
 

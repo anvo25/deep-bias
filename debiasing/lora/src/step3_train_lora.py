@@ -1,4 +1,4 @@
-"""Continued LoRA-SFT of the Olmo3 baseline on the Deep + Shallow diversity data.
+"""Continued LoRA-SFT of our replicated Olmo-3-7B-SFT on the Deep + Shallow diversity data.
 
 Starts from `tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate` and trains one LoRA adapter on
 data/train_messages.jsonl (built by step2_convert_to_messages.py).
